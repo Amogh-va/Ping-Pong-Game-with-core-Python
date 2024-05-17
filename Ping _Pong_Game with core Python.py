@@ -1,14 +1,14 @@
-import turtle as bot
+import turtle  
 
 # Set up the screen
-wn = bot.Screen()
+wn = turtle.Screen()
 wn.title("Ping Pong Game with Mouse Control")
 wn.bgcolor("black")
 wn.setup(width=1000, height=800)
 wn.tracer(0)  # Turns off the screen updates for manual control
 
 # Paddle A
-paddle_a = bot.Turtle()
+paddle_a = turtle.Turtle()
 paddle_a.speed(0)
 paddle_a.shape("square")
 paddle_a.color("white")
@@ -26,7 +26,7 @@ paddle_b.penup()
 paddle_b.goto(350, 0)
 
 # Ball
-ball = bot.Turtle()
+ball = turtle.Turtle()
 ball.speed(40)
 ball.shape("circle")
 ball.color("orange")
